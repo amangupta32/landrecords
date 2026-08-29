@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./landrecords.db
+      - SECRET_KEY=demo_secret_key_land_records_digitization_2026
+      - STORAGE_PATH=./uploads
+    volumes:
+      - ./backend/uploads:/app/uploads
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - backend

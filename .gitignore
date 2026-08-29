@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Frontend builds
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/node_modules/
+
+# Database and uploaded files
+*.db
+backend/*.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Environment variables & local OS files
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

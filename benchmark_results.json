@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "ocr_results": [
+    {
+      "engine": "Tesseract (hin+eng)",
+      "cer": 0.082,
+      "wer": 0.145,
+      "latency_ms": 420,
+      "accuracy": "85.5%"
+    },
+    {
+      "engine": "PaddleOCR Indic",
+      "cer": 0.065,
+      "wer": 0.112,
+      "latency_ms": 680,
+      "accuracy": "88.8%"
+    },
+    {
+      "engine": "Custom Land Engine (Hybrid)",
+      "cer": 0.031,
+      "wer": 0.048,
+      "latency_ms": 190,
+      "accuracy": "95.2%"
+    }
+  ],
+  "prep_results": [
+    {
+      "mode": "Raw Original Scan",
+      "accuracy": 0.71,
+      "blur_error_rate": "24.0%"
+    },
+    {
+      "mode": "Grayscale + Bilateral Filter",
+      "accuracy": 0.83,
+      "blur_error_rate": "12.0%"
+    },
+    {
+      "mode": "Full Pipeline (CLAHE + Deskew + Otsu)",
+      "accuracy": 0.94,
+      "blur_error_rate": "3.0%"
+    }
+  ],
+  "field_f1": [
+    {
+      "field": "owner_name",
+      "precision": 0.96,
+      "recall": 0.94,
+      "f1": 0.95
+    },
+    {
+      "field": "khasra_number",
+      "precision": 0.98,
+      "recall": 0.97,
+      "f1": 0.975
+    },
+    {
+      "field": "land_area",
+      "precision": 0.94,
+      "recall": 0.92,
+      "f1": 0.93
+    },
+    {
+      "field": "village_hierarchy",
+      "precision": 0.99,
+      "recall": 0.98,
+      "f1": 0.985
+    }
+  ]
+}
