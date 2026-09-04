@@ -1,0 +1,28 @@
+state_name: "Uttar Pradesh"
+code: "UP"
+aliases: ["उत्तर प्रदेश", "उत्तरप्रदेश", "Uttar Pradesh", "UP"]
+default_area_unit: "hectare"
+supported_units: ["hectare", "bigha", "biswa", "sq_meter"]
+
+districts:
+  Lucknow:
+    hindi: "लखनऊ"
+    tehsils:
+      - name: "Lucknow"
+        hindi: "लखनऊ"
+        villages: ["Chinhat", "Bakshi Ka Talab", "Kakori"]
+      - name: "Mohanlalganj"
+        hindi: "मोहनलालगंज"
+        villages: ["Nagram", "Gosainganj"]
+      - name: "Malihabad"
+        hindi: "मलिहाबाद"
+        villages: ["Rahimabad", "Mal"]
+  Varanasi:
+    hindi: "वाराणसी"
+    tehsils:
+      - name: "Varanasi"
+        hindi: "वाराणसी"
+        villages: ["Shivpur", "Rohania"]
+      - name: "Pindra"
+        hindi: "पिंडरा"
+        villages: ["Phulpur", "Babhnan"]

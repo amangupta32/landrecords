@@ -1,0 +1,46 @@
+# Preprocessing, Quality, and Confidence Thresholds
+
+quality:
+  # Laplacian variance thresholds for blur classification
+  blur_threshold: 100.0        # Below this is considered blurry/poor
+  acceptable_threshold: 250.0  # Between blur and acceptable is acceptable, above is good
+  min_resolution_dpi: 150
+  min_width: 600
+  min_height: 600
+
+preprocessing:
+  clahe:
+    clip_limit: 2.0
+    tile_grid_size: [8, 8]
+  denoise:
+    h: 10.0
+    template_window_size: 7
+    search_window_size: 21
+  deskew:
+    max_angle: 45.0
+    min_confidence: 0.35
+    hough_threshold: 100
+    min_line_length: 100
+    max_line_gap: 10
+    angle_resolution_deg: 0.5
+  threshold:
+    method: "otsu"  # "otsu" or "adaptive"
+    block_size: 11
+    c_constant: 2
+
+confidence_weights:
+  ocr: 0.40
+  extraction: 0.30
+  validation: 0.20
+  context: 0.10
+
+confidence_tiers:
+  very_high: 0.90
+  high: 0.75
+  medium: 0.50
+  low: 0.00
+
+routing:
+  primary_ocr_min_confidence: 0.85
+  ensemble_disagreement_threshold: 0.15
+  human_review_threshold: 0.75

@@ -1,0 +1,43 @@
+state_name: "Uttarakhand"
+code: "UK"
+aliases: ["उत्तराखंड", "उत्तराखण्ड", "Uttarakhand"]
+default_area_unit: "hectare"
+supported_units: ["hectare", "bigha", "nali", "mutthi"]
+
+districts:
+  Dehradun:
+    hindi: "देहरादून"
+    tehsils:
+      - name: "Dehradun"
+        hindi: "देहरादून"
+        villages: ["Rajpur", "Malsi", "Jakhan", "Garhi", "Premnagar"]
+      - name: "Rishikesh"
+        hindi: "ऋषिकेश"
+        villages: ["Gumaniwala", "Khadri", "Shyampur"]
+      - name: "Doiwala"
+        hindi: "डोईवाला"
+        villages: ["Bhaniawala", "Jolly Grant", "Ranipokhari", "Markham Grant"]
+      - name: "Vikasnagar"
+        hindi: "विकासनगर"
+        villages: ["Dakpathar", "Herbertpur", "Kalsi"]
+  Haridwar:
+    hindi: "हरिद्वार"
+    tehsils:
+      - name: "Haridwar"
+        hindi: "हरिद्वार"
+        villages: ["Kankhal", "Jwalapur", "Mayapur"]
+      - name: "Roorkee"
+        hindi: "रुड़की"
+        villages: ["Piran Kaliyar", "Bhagwanpur", "Dhandera"]
+      - name: "Laksar"
+        hindi: "लक्सर"
+        villages: ["Sultanpur", "Raisi", "Gordhanpur"]
+  Nainital:
+    hindi: "नैनीताल"
+    tehsils:
+      - name: "Nainital"
+        hindi: "नैनीताल"
+        villages: ["Bhowali", "Bhimtal"]
+      - name: "Haldwani"
+        hindi: "हल्द्वानी"
+        villages: ["Kathgodam", "Mukhani", "Kusumkhera"]

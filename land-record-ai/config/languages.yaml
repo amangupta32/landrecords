@@ -1,0 +1,42 @@
+# Language definitions, scripts, and Indic numeral mapping
+
+languages:
+  hin:
+    name: "Hindi"
+    script: "Devanagari"
+    code: "hin"
+    tesseract_code: "hin"
+    paddle_code: "hi"
+  eng:
+    name: "English"
+    script: "Latin"
+    code: "eng"
+    tesseract_code: "eng"
+    paddle_code: "en"
+  mar:
+    name: "Marathi"
+    script: "Devanagari"
+    code: "mar"
+    tesseract_code: "mar"
+    paddle_code: "mr"
+
+indic_numerals:
+  devanagari:
+    "०": "0"
+    "१": "1"
+    "२": "2"
+    "३": "3"
+    "४": "4"
+    "५": "5"
+    "६": "6"
+    "७": "7"
+    "८": "8"
+    "९": "9"
+    "।": "."
+    "।": "."
+
+punctuation_mappings:
+  "।": "."
+  "॥": "."
+  "–": "-"
+  "—": "-"

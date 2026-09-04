@@ -1,0 +1,8 @@
+state_name: "Generic"
+code: "GEN"
+supported_units: ["hectare", "acre", "bigha", "sq_meter"]
+districts: {}
+terminology:
+  khasra_label: "खसरा / Khasra"
+  khata_label: "खाता / Khata"
+  mutation_label: "नामांतरण / Mutation"

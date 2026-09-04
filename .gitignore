@@ -23,3 +23,8 @@ backend/uploads/*
 Thumbs.db
 .vscode/
 .idea/
+.pytest_cache/
+*/.pytest_cache/
+land-record-ai/data/processed/debug/
+!land-record-ai/data/processed/debug/.gitkeep
+data/

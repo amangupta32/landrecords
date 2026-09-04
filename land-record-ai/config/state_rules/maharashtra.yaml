@@ -1,0 +1,19 @@
+state_name: "Maharashtra"
+code: "MH"
+aliases: ["महाराष्ट्र", "Maharashtra", "MH"]
+default_area_unit: "hectare"
+supported_units: ["hectare", "are", "guntha", "sq_meter"]
+
+districts:
+  Pune:
+    hindi: "पुणे"
+    tehsils:
+      - name: "Haveli"
+        hindi: "हवेली"
+        villages: ["Wagholi", "Hadapsar", "Khadakwasla"]
+      - name: "Mulshi"
+        hindi: "मुळशी"
+        villages: ["Pirangut", "Paud"]
+      - name: "Maval"
+        hindi: "मावळ"
+        villages: ["Talegaon", "Lonavala"]

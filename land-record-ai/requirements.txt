@@ -1,0 +1,29 @@
+# Land Record AI - Dependencies
+
+# Core Scientific & Computer Vision
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+pillow>=10.0.0
+
+# Schemas & Validation
+pydantic>=2.5.0
+pydantic-settings>=2.0.0
+PyYAML>=6.0.1
+
+# API & Web
+fastapi>=0.109.0
+uvicorn>=0.27.0
+python-multipart>=0.0.6
+
+# OCR & NLP Engines (CPU/Offline ready)
+pytesseract>=0.3.10
+# paddlepaddle>=2.5.0
+# paddleocr>=2.7.0
+
+# PDF Processing
+pypdf>=4.0.0
+
+# Testing & Evaluation
+pytest>=8.0.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.23.0

@@ -1,0 +1,138 @@
+# Land Record Field Definitions, Keywords, Units, and Regex Rules
+
+fields:
+  owner_names:
+    labels:
+      hindi:
+        - "नाम"
+        - "नाम धारक"
+        - "खातेदार"
+        - "खातेदार का नाम"
+        - "काश्तकार"
+        - "स्वामी"
+        - "भूमिधर"
+        - "आसामी"
+        - "हिस्सेदार"
+      english:
+        - "Owner"
+        - "Owner Name"
+        - "Khatedar"
+        - "Tenure Holder"
+        - "Name of Landholder"
+        - "Pattadar"
+    relations:
+      hindi:
+        - "पुत्र"
+        - "पुत्री"
+        - "सुपुत्र"
+        - "पिता"
+        - "पति"
+        - "पत्नी"
+        - "बेवा"
+        - "वारिस"
+      english:
+        - "S/O"
+        - "D/O"
+        - "W/O"
+        - "C/O"
+        - "F/O"
+
+  khasra_numbers:
+    labels:
+      hindi:
+        - "खसरा"
+        - "खसरा संख्या"
+        - "खसरा नं"
+        - "खसरा सं"
+        - "गाटा संख्या"
+        - "गाटा सं"
+        - "भूखण्ड संख्या"
+        - "प्लॉट नं"
+      english:
+        - "Khasra"
+        - "Khasra No"
+        - "Khasra Number"
+        - "Survey No"
+        - "Survey Number"
+        - "Plot No"
+        - "Gata No"
+    patterns:
+      - '(?i)(?:खसरा|गाटा|khasra|survey\s*(?:no|number)?)\s*(?:संख्या|नं\.?|no\.?)?[:\s\-]*([0-9]+(?:\s*[\/|\-]\s*[0-9]+)*(?:\s*[क-हa-zA-Z])?)'
+      - '\b([0-9]{1,5}(?:\/[0-9]{1,4})+)\b'
+
+  khata_numbers:
+    labels:
+      hindi:
+        - "खाता"
+        - "खाता संख्या"
+        - "खाता नं"
+        - "खाता सं"
+        - "खतौनी संख्या"
+        - "खतौनी नं"
+      english:
+        - "Khata"
+        - "Khata No"
+        - "Khata Number"
+        - "Account No"
+        - "Khewat No"
+        - "Jamabandi No"
+    patterns:
+      - '(?i)(?:खाता|खतौनी|khata|khewat)\s*(?:संख्या|नं\.?|no\.?)?[:\s\-]*([0-9]+(?:\s*[\/|\-]\s*[0-9]+)?)'
+
+  land_area:
+    labels:
+      hindi:
+        - "रकबा"
+        - "क्षेत्रफल"
+        - "विस्तार"
+      english:
+        - "Area"
+        - "Extent"
+        - "Land Area"
+        - "Measurement"
+    units:
+      hectare:
+        aliases: ["हेक्टेयर", "हेक्टे.", "हे.", "hectare", "hectares", "ha", "hac"]
+        standard_unit: "hectare"
+      acre:
+        aliases: ["एकड़", "एकड", "acre", "acres", "ac"]
+        standard_unit: "acre"
+      bigha:
+        aliases: ["बीघा", "बीघे", "विघा", "bigha", "bighas"]
+        standard_unit: "bigha"
+      biswa:
+        aliases: ["बिस्वा", "बिस्वे", "biswa", "biswas"]
+        standard_unit: "biswa"
+      sq_meter:
+        aliases: ["वर्ग मीटर", "वर्ग मी.", "व.मी.", "square meter", "sqm", "sq m", "sq.m."]
+        standard_unit: "square_meter"
+
+  location:
+    village:
+      labels: ["ग्राम", "गांव", "मौजा", "गाँव", "Village", "Mauza"]
+    tehsil:
+      labels: ["तहसील", "तालुका", "Tehsil", "Taluka", "Sub-Division"]
+    district:
+      labels: ["जिला", "ज़िला", "District", "Dist"]
+    state:
+      labels: ["राज्य", "State", "प्रदेश"]
+
+  mutation:
+    labels:
+      hindi:
+        - "नामांतरण"
+        - "दाखिल खारिज"
+        - "इंतकाल"
+        - "तब्दील मलकीयत"
+        - "फेरफार"
+      english:
+        - "Mutation"
+        - "Mutation Number"
+        - "Entry Number"
+        - "Ferfar"
+        - "Dakhil Kharij"
+
+  dates:
+    patterns:
+      - '(\b\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}\b)'
+      - '(\b\d{4}[\-\/\.]\d{1,2}[\-\/\.]\d{1,2}\b)'
